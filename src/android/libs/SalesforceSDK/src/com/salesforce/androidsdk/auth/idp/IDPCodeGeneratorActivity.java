@@ -86,7 +86,8 @@ public class IDPCodeGeneratorActivity extends Activity {
         final WebSettings webSettings = webView.getSettings();
         webSettings.setUseWideViewPort(true);
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
-        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptEnabled(false);
+        SalesforceSDKLogger.i("DDD", "Javascript is off");
         webView.setWebViewClient(new IDPWebViewClient());
         try {
             final IDPRequestHandler idpRequestHandler = new IDPRequestHandler(spConfig, userAccount);
