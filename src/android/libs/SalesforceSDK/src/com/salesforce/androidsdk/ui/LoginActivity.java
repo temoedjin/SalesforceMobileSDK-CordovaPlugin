@@ -126,7 +126,6 @@ public class LoginActivity extends AccountAuthenticatorActivity
         webSettings.setUseWideViewPort(true);
         webSettings.setLayoutAlgorithm(LayoutAlgorithm.NORMAL);
         webSettings.setJavaScriptEnabled(false);
-        SalesforceSDKLogger.i("DDD", "Javascript is off in login");
         webSettings.setAllowFileAccessFromFileURLs(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setDatabaseEnabled(true);
